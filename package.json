@@ -1,0 +1,19 @@
+{
+  "name": "futiba-club",
+  "version": "1.0.0",
+  "description": "FutibaClub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanribeiros/futiba-club.git"
+  },
+  "author": "Luan Ribeiro <luanribeiros@gmail.com> (https://luanribeiros.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luanribeiros/futiba-club/issues"
+  },
+  "homepage": "https://github.com/luanribeiros/futiba-club#readme"
+}
