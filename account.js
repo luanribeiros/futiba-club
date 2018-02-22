@@ -11,6 +11,9 @@ const init = (connection) => {
   app.get('/new-account', (req, res) => {
     res.render('new-account');
   });
+  app.post('/new-account', (req, res) => {
+    res.render('new-account');
+  });
   return app;
 };
 
