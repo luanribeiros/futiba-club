@@ -3,12 +3,10 @@ const mysql = require('mysql2/promise');
 
 const app = express();
 
+const account = require('./account');
+
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-
-app.get('/', (req, res) => {
-  res.render('index');
-});
 
 const init = async () => {
   const connection = await mysql.createConnection({
@@ -17,14 +15,15 @@ const init = async () => {
     password: '',
     database: 'futibaclub',
   });
-  console.log(connection);
+
+  app.use(account(connection));
+
+  app.listen(3000, (err) => {
+    if (err) {
+      console.log('Não foi possível iniciar');
+    }
+    console.log('Servidor rodando ...');
+  });
 };
 
 init();
-
-app.listen(3000, (err) => {
-  if (err) {
-    console.log('Não foi possível iniciar');
-  }
-  console.log('Servidor rodando ...');
-});
