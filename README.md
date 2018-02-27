@@ -1,3 +1,3 @@
 # Futiba Club
 
-Projeto baseado no mini-curso Fullstack Academy 3 do (DevPleno)[https://www.devpleno.com]. Implementei novas features e etc. 
+Project based on the FullStack Academy 3 mini-course of [DevPleno](https://www.devpleno.com). I implemented new features. 
